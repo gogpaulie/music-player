@@ -138,6 +138,13 @@ h3 {
   background: #818181;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
   .player-container {
