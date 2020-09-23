@@ -51,18 +51,18 @@ let songIndex = 0;
 function prevSong() {
   songIndex--;
   if (songIndex < 0) {
-    songIndex = songs.length - 1;
+    songIndex = songs2.length - 1;
   }
-  loadSong(songs[songIndex]);
+  loadSong(songs2[songIndex]);
   playSong();
 }
 // Next Song
 function nextSong() {
   songIndex++;
-  if (songIndex > songs.length - 1) {
+  if (songIndex > songs2.length - 1) {
     songIndex = 0;
   }
-  loadSong(songs[songIndex]);
+  loadSong(songs2[songIndex]);
   playSong();
 }
 
@@ -90,7 +90,7 @@ function setVolumeBar(e) {
 }
 
 // On Load - Select first song
-loadSong(songs[songIndex]);
+loadSong(songs2[songIndex]);
 
 // Update progress bar and time
 function updateProgressBar(e) {

@@ -11,6 +11,11 @@ var canvas,
   frequency_array;
 bars = 200;
 bar_width = 2;
+
+// if (window.matchMedia('(max-width: 600px)')) {
+//   radius = 150;
+// }
+
 function initPage() {
   const audio = document.querySelector('audio');
   context = new (window.AudioContext || window.webkitAudioContext)();

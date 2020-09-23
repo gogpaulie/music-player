@@ -16,8 +16,14 @@ body {
   font-size: 12px;
 }
 
+#cavas-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 canvas {
-  z-index: -1;
+  z-index: -5;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -145,14 +151,18 @@ footer {
   height: 2.5rem;
 }
 
-/* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
+/* Media Query: 600px */
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
   .player-container {
-    width: 95vw;
+    width: 65vw;
   }
 
   .img-container {
-    left: 29px;
+    left: 30px;
+    width: 85%;
   }
 
   h2 {
@@ -165,12 +175,48 @@ footer {
 
   .player-controls {
     top: -10px;
-    left: 100px;
+    left: 80px;
+  }
+}
+
+/* Media Query: 500px */
+@media screen and (max-width: 500px) {
+  .player-controls {
+    top: -10px;
+    left: 40px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  body {
+    width: 100%;
+  }
+  .player-container {
+    width: 80vw;
+  }
+
+  .img-container {
+    left: 24px;
+    width: 85%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 40px;
   }
 }
 
 /* Galaxy Fold */
-/* @media screen and (max-width: 281px) {
+@media screen and (max-width: 281px) {
   .player-container {
     width: 95vw;
   }
@@ -193,4 +239,4 @@ footer {
     margin-top: 15px;
     left: 100px;
   }
-} */
+}
