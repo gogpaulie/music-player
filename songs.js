@@ -5,18 +5,18 @@ const songs = [
     artist: 'King Gizzard & The Lizard Wizard',
   },
   {
-    name: 'jacinto-2',
-    displayName: 'Seven Nation Army (Remix)',
-    artist: 'Jacinto Design',
+    name: 'music-2',
+    displayName: 'Gong of Catastrophe',
+    artist: 'OSEES',
   },
   {
-    name: 'jacinto-3',
-    displayName: 'Goodnight',
-    artist: 'Jacinto Design',
+    name: 'music-3',
+    displayName: 'City Fade',
+    artist: 'Against All Logic',
   },
   {
-    name: 'metric-1',
-    displayName: 'Front Row (Remix)',
-    artist: 'Metric/Jacinto Design',
+    name: 'music-4',
+    displayName: 'Summon The Fire',
+    artist: 'The Comet Is Coming',
   },
 ];
